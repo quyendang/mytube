@@ -89,12 +89,14 @@ class MainNavigationViewController: UINavigationController {
 extension MainNavigationViewController: PlayerVCDelegate{
     func didMinimize(withChannelID: String) {
         self.animatePlayView(toState: .minimized)
+        UIApplication.shared.isStatusBarHidden = false
         let vc = UIStoryboard(name: "Channel", bundle: nil).instantiateViewController(withIdentifier: "channelNavigationController") as! UINavigationController
         self.present(vc, animated: true, completion: nil)
     }
     
     func didMinimize() {
         self.animatePlayView(toState: .minimized)
+         UIApplication.shared.isStatusBarHidden = false
     }
     
     func didmaximize(){
