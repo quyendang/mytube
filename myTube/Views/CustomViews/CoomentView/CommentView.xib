@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="CommentView" customModule="myTube" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Wot-xJ-iZe">
+                    <rect key="frame" x="15" y="5" width="40" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="D2S-Sn-Uer"/>
+                        <constraint firstAttribute="width" constant="40" id="HZg-vC-scS"/>
+                    </constraints>
+                </imageView>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Add a public comment..." minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="a2H-Jm-XOA">
+                    <rect key="frame" x="65" y="14.5" width="295" height="21"/>
+                    <color key="tintColor" red="0.67455112930000005" green="0.15692374110000001" blue="0.10914970929999999" alpha="1" colorSpace="calibratedRGB"/>
+                    <color key="textColor" red="0.67455112930000005" green="0.15692374110000001" blue="0.10914970929999999" alpha="1" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Wot-xJ-iZe" firstAttribute="centerY" secondItem="vUN-kp-3ea" secondAttribute="centerY" id="78T-qh-KLt"/>
+                <constraint firstItem="Wot-xJ-iZe" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="15" id="cc5-25-Jso"/>
+                <constraint firstItem="a2H-Jm-XOA" firstAttribute="leading" secondItem="Wot-xJ-iZe" secondAttribute="trailing" constant="10" id="gCC-dJ-YhR"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="a2H-Jm-XOA" secondAttribute="trailing" constant="15" id="lk0-0W-qde"/>
+                <constraint firstItem="a2H-Jm-XOA" firstAttribute="centerY" secondItem="Wot-xJ-iZe" secondAttribute="centerY" id="njc-Cx-32f"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="avatarImageVIew" destination="Wot-xJ-iZe" id="Rkj-or-6G8"/>
+                <outlet property="commentTextField" destination="a2H-Jm-XOA" id="o4R-ea-cFr"/>
+            </connections>
+            <point key="canvasLocation" x="34.5" y="-238"/>
+        </view>
+    </objects>
+</document>

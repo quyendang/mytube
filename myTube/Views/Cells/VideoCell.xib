@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="video_cell" rowHeight="290" id="Qjm-Ez-tZq" customClass="VideoTableViewCell" customModule="myTube" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="290"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Qjm-Ez-tZq" id="UnI-S7-QcN">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="289.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="3UT-eg-Ddc">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="211"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="3UT-eg-Ddc" secondAttribute="height" multiplier="16:9" id="ehN-3H-0VE"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Coporate Consolidation: Last week Tonight with John" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lrv-kg-Jvi">
+                        <rect key="frame" x="10" y="216" width="355" height="42"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="42" id="kGm-aq-7F8"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
+                        <color key="textColor" red="0.68888300657272339" green="0.71366006135940552" blue="0.73448425531387329" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LastWeeken" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xnW-Jr-ScH">
+                        <rect key="frame" x="10" y="263" width="177.5" height="16.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" red="0.67455112930000005" green="0.15692374110000001" blue="0.10914970929999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10 minute ago" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ddp-8c-974">
+                        <rect key="frame" x="187.5" y="263" width="177.5" height="16.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" red="0.68888300660000001" green="0.71366006140000005" blue="0.73448425530000006" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" red="0.111818932" green="0.11183650050000001" blue="0.1118125319" alpha="1" colorSpace="calibratedRGB"/>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="Ddp-8c-974" secondAttribute="bottom" constant="10" id="4MP-ZB-9mg"/>
+                    <constraint firstItem="3UT-eg-Ddc" firstAttribute="top" secondItem="UnI-S7-QcN" secondAttribute="top" id="DYp-Kb-hIJ"/>
+                    <constraint firstAttribute="bottom" secondItem="xnW-Jr-ScH" secondAttribute="bottom" constant="10" id="NMv-Jb-A23"/>
+                    <constraint firstItem="Ddp-8c-974" firstAttribute="top" secondItem="xnW-Jr-ScH" secondAttribute="top" id="QKs-AS-cWF"/>
+                    <constraint firstItem="xnW-Jr-ScH" firstAttribute="top" secondItem="Lrv-kg-Jvi" secondAttribute="bottom" constant="5" id="bW3-iJ-SKp"/>
+                    <constraint firstItem="Lrv-kg-Jvi" firstAttribute="leading" secondItem="UnI-S7-QcN" secondAttribute="leading" constant="10" id="crB-QC-HGM"/>
+                    <constraint firstItem="xnW-Jr-ScH" firstAttribute="leading" secondItem="Lrv-kg-Jvi" secondAttribute="leading" id="hTM-ld-0U0"/>
+                    <constraint firstItem="Ddp-8c-974" firstAttribute="width" secondItem="xnW-Jr-ScH" secondAttribute="width" id="is8-r3-Tng"/>
+                    <constraint firstAttribute="trailing" secondItem="Lrv-kg-Jvi" secondAttribute="trailing" constant="10" id="mB2-kd-AVN"/>
+                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="xnW-Jr-ScH" secondAttribute="trailing" constant="20" symbolic="YES" id="mTR-Ki-dYj"/>
+                    <constraint firstItem="xnW-Jr-ScH" firstAttribute="width" secondItem="Lrv-kg-Jvi" secondAttribute="width" multiplier="1/2" id="ngk-oD-5xH"/>
+                    <constraint firstItem="Ddp-8c-974" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="UnI-S7-QcN" secondAttribute="leading" constant="20" symbolic="YES" id="oNv-Fu-Qwx"/>
+                    <constraint firstItem="Ddp-8c-974" firstAttribute="trailing" secondItem="Lrv-kg-Jvi" secondAttribute="trailing" id="oz2-r1-BN9"/>
+                    <constraint firstAttribute="trailing" secondItem="3UT-eg-Ddc" secondAttribute="trailing" id="rlp-Jr-Qun"/>
+                    <constraint firstItem="3UT-eg-Ddc" firstAttribute="leading" secondItem="UnI-S7-QcN" secondAttribute="leading" id="s2K-Nj-r1C"/>
+                    <constraint firstItem="Lrv-kg-Jvi" firstAttribute="top" secondItem="3UT-eg-Ddc" secondAttribute="bottom" constant="5" id="x7W-yz-MoR"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="channelLabel" destination="xnW-Jr-ScH" id="e8C-4p-0k0"/>
+                <outlet property="coverImageView" destination="3UT-eg-Ddc" id="dz6-PM-mo4"/>
+                <outlet property="timeLabel" destination="Ddp-8c-974" id="njA-a8-jPn"/>
+                <outlet property="titleLabel" destination="Lrv-kg-Jvi" id="ksJ-lc-mPA"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+</document>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Roboto-Regular.ttf">
+            <string>Roboto-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="8Cq-6W-7Sv" customClass="AccountHeaderView" customModule="myTube" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="96"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eVr-yg-sHo">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="96"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="account_placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="A33-Y0-qiF">
+                            <rect key="frame" x="15" y="13" width="70" height="70"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="70" id="9jY-96-IJH"/>
+                                <constraint firstAttribute="width" constant="70" id="Yc3-Mc-GwQ"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sign in" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k24-9d-9SY">
+                            <rect key="frame" x="95" y="37" width="230" height="23.5"/>
+                            <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="20"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6MO-5f-GAK">
+                            <rect key="frame" x="335" y="36" width="25" height="25"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="25" id="eau-my-8F5"/>
+                                <constraint firstAttribute="height" constant="25" id="si4-MT-nPY"/>
+                            </constraints>
+                            <color key="tintColor" red="0.67455112930000005" green="0.15692374110000001" blue="0.10914970929999999" alpha="1" colorSpace="calibratedRGB"/>
+                            <state key="normal" image="expand"/>
+                            <connections>
+                                <action selector="onMoreClick:" destination="-2" eventType="touchUpInside" id="Xq7-MH-rpW"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="6MO-5f-GAK" firstAttribute="leading" secondItem="k24-9d-9SY" secondAttribute="trailing" constant="10" id="AXb-0f-yaD"/>
+                        <constraint firstItem="6MO-5f-GAK" firstAttribute="centerY" secondItem="k24-9d-9SY" secondAttribute="centerY" id="MEV-Yf-39n"/>
+                        <constraint firstItem="k24-9d-9SY" firstAttribute="centerY" secondItem="A33-Y0-qiF" secondAttribute="centerY" id="OeI-wy-BP5"/>
+                        <constraint firstItem="A33-Y0-qiF" firstAttribute="centerY" secondItem="eVr-yg-sHo" secondAttribute="centerY" id="TnW-P3-qL5"/>
+                        <constraint firstAttribute="trailing" secondItem="6MO-5f-GAK" secondAttribute="trailing" constant="15" id="Wcp-jN-ZRZ"/>
+                        <constraint firstItem="k24-9d-9SY" firstAttribute="leading" secondItem="A33-Y0-qiF" secondAttribute="trailing" constant="10" id="fZx-Zv-oee"/>
+                        <constraint firstItem="A33-Y0-qiF" firstAttribute="leading" secondItem="eVr-yg-sHo" secondAttribute="leading" constant="15" id="gFq-Kc-8Jo"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="eVr-yg-sHo" firstAttribute="leading" secondItem="oRp-Qy-hVX" secondAttribute="leading" id="S6R-lN-Fze"/>
+                <constraint firstItem="eVr-yg-sHo" firstAttribute="top" secondItem="oRp-Qy-hVX" secondAttribute="top" id="amF-LB-cny"/>
+                <constraint firstItem="oRp-Qy-hVX" firstAttribute="trailing" secondItem="eVr-yg-sHo" secondAttribute="trailing" id="dha-qh-fY2"/>
+                <constraint firstItem="eVr-yg-sHo" firstAttribute="bottom" secondItem="oRp-Qy-hVX" secondAttribute="bottom" id="yBj-Eu-F9j"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="oRp-Qy-hVX"/>
+            <connections>
+                <outlet property="avatarImageView" destination="A33-Y0-qiF" id="zmW-p9-3Sr"/>
+                <outlet property="moreButton" destination="6MO-5f-GAK" id="lBp-Hi-c2s"/>
+                <outlet property="titleLabel" destination="k24-9d-9SY" id="ikE-dl-NeP"/>
+            </connections>
+            <point key="canvasLocation" x="-289" y="-171"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="account_placeholder" width="100" height="100"/>
+        <image name="expand" width="40" height="40"/>
+    </resources>
+</document>

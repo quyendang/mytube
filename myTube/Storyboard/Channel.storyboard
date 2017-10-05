@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Channel View Controller-->
+        <scene sceneID="kXO-H1-Kiq">
+            <objects>
+                <viewController storyboardIdentifier="channelViewController" id="5DJ-G1-88k" customClass="ChannelViewController" customModule="myTube" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="hKv-Ez-qKd">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="Bdx-yi-KS0"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Vbl-Pf-HtZ"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IUE-bB-coM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-183" y="193"/>
+        </scene>
+        <!--Videos View Controller-->
+        <scene sceneID="mcT-q7-2i4">
+            <objects>
+                <viewController storyboardIdentifier="videosViewController" id="Sq6-Tc-Iqp" customClass="VideosViewController" customModule="myTube" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5jT-f1-e6u">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="5ew-Xj-HQS">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="Sq6-Tc-Iqp" id="GBx-43-3N2"/>
+                                    <outlet property="delegate" destination="Sq6-Tc-Iqp" id="jHE-SH-D6x"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="5ew-Xj-HQS" firstAttribute="top" secondItem="Iuz-Be-g9D" secondAttribute="top" id="6XC-zi-ZuO"/>
+                            <constraint firstItem="5ew-Xj-HQS" firstAttribute="leading" secondItem="Iuz-Be-g9D" secondAttribute="leading" id="OEU-MY-2ZZ"/>
+                            <constraint firstItem="Iuz-Be-g9D" firstAttribute="bottom" secondItem="5ew-Xj-HQS" secondAttribute="bottom" id="h3i-Va-1SI"/>
+                            <constraint firstItem="Iuz-Be-g9D" firstAttribute="trailing" secondItem="5ew-Xj-HQS" secondAttribute="trailing" id="w3z-CM-Vf6"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Iuz-Be-g9D"/>
+                    </view>
+                    <connections>
+                        <outlet property="myTableView" destination="5ew-Xj-HQS" id="vGJ-PY-ddY"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XjF-54-ahv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="758" y="182"/>
+        </scene>
+        <!--Playlists View Controller-->
+        <scene sceneID="wHJ-4o-bvo">
+            <objects>
+                <viewController storyboardIdentifier="playlistsViewController" id="hbE-6N-sm2" customClass="PlaylistsViewController" customModule="myTube" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="SwA-Qd-6fu">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="BZT-XV-kaz"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yLR-0U-JYW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1401" y="181"/>
+        </scene>
+        <!--Info View Controller-->
+        <scene sceneID="38O-7l-nI4">
+            <objects>
+                <viewController storyboardIdentifier="infoViewController" id="1kE-be-yPS" customClass="InfoViewController" customModule="myTube" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8t8-EH-KPq">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="XGR-qd-0Zv"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DXZ-SP-axQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1778" y="225"/>
+        </scene>
+        <!--Channel Search View Controller-->
+        <scene sceneID="qrZ-l1-jA7">
+            <objects>
+                <viewController storyboardIdentifier="channelSearchViewController" id="ZyW-LH-mkf" customClass="ChannelSearchViewController" customModule="myTube" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="64g-By-6QX">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="zdp-WT-F1K"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lGX-xc-VEA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2295" y="153"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="D15-iH-u6I">
+            <objects>
+                <navigationController storyboardIdentifier="channelNavigationController" automaticallyAdjustsScrollViewInsets="NO" id="dLr-hW-pZw" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="xTB-ov-6Kc">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="5DJ-G1-88k" kind="relationship" relationship="rootViewController" id="wyu-o9-iQa"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DXv-rG-NhG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-990" y="193"/>
+        </scene>
+    </scenes>
+</document>

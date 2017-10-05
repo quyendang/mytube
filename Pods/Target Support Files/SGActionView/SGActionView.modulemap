@@ -1,0 +1,6 @@
+framework module SGActionView {
+  umbrella header "SGActionView-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Roboto-Regular.ttf">
+            <string>Roboto-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="gxj-xC-WA8" customClass="VideoHeaderView" customModule="myTube" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="40"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jXI-qG-KSO">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="40"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="All" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OHf-Lc-COg">
+                            <rect key="frame" x="15" y="11.5" width="17.5" height="19"/>
+                            <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="16"/>
+                            <color key="textColor" red="0.90823972225189209" green="0.92638683319091797" blue="0.9317171573638916" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NJc-YZ-2qz">
+                            <rect key="frame" x="42.5" y="10.5" width="18" height="18"/>
+                            <constraints>
+                                <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="18" id="JHH-xp-M1X"/>
+                                <constraint firstAttribute="width" constant="18" id="bhJ-EI-An2"/>
+                                <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="18" id="fdK-f7-rvy"/>
+                                <constraint firstAttribute="height" constant="18" id="xxu-kw-B4h"/>
+                            </constraints>
+                            <color key="tintColor" red="0.90823972230000005" green="0.92638683320000004" blue="0.93171715740000005" alpha="1" colorSpace="calibratedRGB"/>
+                            <state key="normal" image="ic_next"/>
+                            <connections>
+                                <action selector="onNextClick:" destination="-2" eventType="touchUpInside" id="hRm-Dq-YQd"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="0.111818932" green="0.11183650050000001" blue="0.1118125319" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstItem="OHf-Lc-COg" firstAttribute="leading" secondItem="jXI-qG-KSO" secondAttribute="leading" constant="15" id="G1k-Sh-wKh"/>
+                        <constraint firstItem="OHf-Lc-COg" firstAttribute="centerY" secondItem="jXI-qG-KSO" secondAttribute="centerY" id="Uh9-dx-awz"/>
+                        <constraint firstItem="NJc-YZ-2qz" firstAttribute="centerY" secondItem="jXI-qG-KSO" secondAttribute="centerY" id="das-Nb-Eav"/>
+                        <constraint firstItem="NJc-YZ-2qz" firstAttribute="leading" secondItem="OHf-Lc-COg" secondAttribute="trailing" constant="10" id="rh7-7R-pUF"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.111818932" green="0.11183650050000001" blue="0.1118125319" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="jXI-qG-KSO" firstAttribute="top" secondItem="UD8-Gi-JGd" secondAttribute="top" id="1v8-2b-PrZ"/>
+                <constraint firstItem="jXI-qG-KSO" firstAttribute="bottom" secondItem="UD8-Gi-JGd" secondAttribute="bottom" id="Kzl-3Y-zqj"/>
+                <constraint firstItem="jXI-qG-KSO" firstAttribute="trailing" secondItem="UD8-Gi-JGd" secondAttribute="trailing" id="TMS-Lh-3b0"/>
+                <constraint firstItem="jXI-qG-KSO" firstAttribute="leading" secondItem="UD8-Gi-JGd" secondAttribute="leading" id="qQv-FP-iZA"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="UD8-Gi-JGd"/>
+            <connections>
+                <outlet property="nextButton" destination="NJc-YZ-2qz" id="WB4-sQ-FOU"/>
+                <outlet property="sView" destination="jXI-qG-KSO" id="WgR-XI-KBc"/>
+                <outlet property="titleLabel" destination="OHf-Lc-COg" id="rdo-o7-HcE"/>
+            </connections>
+            <point key="canvasLocation" x="-53.5" y="-308"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="ic_next" width="32" height="32"/>
+    </resources>
+</document>

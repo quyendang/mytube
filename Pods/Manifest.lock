@@ -1,0 +1,106 @@
+PODS:
+  - Alamofire (4.5.1)
+  - AlamofireObjectMapper (4.1.0):
+    - Alamofire (~> 4.1)
+    - ObjectMapper (~> 2.0)
+  - CarbonKit (2.1.10)
+  - ChameleonFramework (2.1.0):
+    - ChameleonFramework/Default (= 2.1.0)
+  - ChameleonFramework/Default (2.1.0)
+  - CMTabbarView (0.2.0)
+  - FirebaseAnalytics (3.9.0):
+    - FirebaseCore (~> 3.6)
+    - FirebaseInstanceID (~> 1.0)
+    - GoogleToolboxForMac/NSData+zlib (~> 2.1)
+  - FirebaseCore (3.6.0):
+    - GoogleToolboxForMac/NSData+zlib (~> 2.1)
+  - FirebaseInstanceID (1.0.10):
+    - FirebaseCore (~> 3.6)
+  - Google/Core (3.1.0):
+    - FirebaseAnalytics (~> 3.2)
+  - Google/SignIn (3.1.0):
+    - Google/Core
+    - GoogleSignIn (~> 4.0)
+  - GoogleSignIn (4.1.0):
+    - GoogleToolboxForMac/NSDictionary+URLArguments (~> 2.1)
+    - GoogleToolboxForMac/NSString+URLArguments (~> 2.1)
+    - GTMOAuth2 (~> 1.0)
+    - GTMSessionFetcher/Core (~> 1.1)
+  - GoogleToolboxForMac/DebugUtils (2.1.1):
+    - GoogleToolboxForMac/Defines (= 2.1.1)
+  - GoogleToolboxForMac/Defines (2.1.1)
+  - GoogleToolboxForMac/NSData+zlib (2.1.1):
+    - GoogleToolboxForMac/Defines (= 2.1.1)
+  - GoogleToolboxForMac/NSDictionary+URLArguments (2.1.1):
+    - GoogleToolboxForMac/DebugUtils (= 2.1.1)
+    - GoogleToolboxForMac/Defines (= 2.1.1)
+    - GoogleToolboxForMac/NSString+URLArguments (= 2.1.1)
+  - GoogleToolboxForMac/NSString+URLArguments (2.1.1)
+  - GTMOAuth2 (1.1.5):
+    - GTMSessionFetcher (~> 1.1)
+  - GTMSessionFetcher (1.1.11):
+    - GTMSessionFetcher/Full (= 1.1.11)
+  - GTMSessionFetcher/Core (1.1.11)
+  - GTMSessionFetcher/Full (1.1.11):
+    - GTMSessionFetcher/Core (= 1.1.11)
+  - MXParallaxHeader (0.6.1)
+  - NVActivityIndicatorView (3.7.0):
+    - NVActivityIndicatorView/Presenter (= 3.7.0)
+  - NVActivityIndicatorView/Presenter (3.7.0)
+  - ObjectMapper (2.2.9)
+  - PickerView (0.3.1)
+  - SDWebImage (4.1.0):
+    - SDWebImage/Core (= 4.1.0)
+  - SDWebImage/Core (4.1.0)
+  - SGActionView (0.0.1)
+  - SnapKit (3.2.0)
+  - SwiftyJSON (3.1.4)
+  - VGPlayer (0.1.5):
+    - SnapKit (~> 3.2.0)
+  - XCDYouTubeKit (2.5.5)
+
+DEPENDENCIES:
+  - Alamofire
+  - AlamofireObjectMapper (~> 4.0)
+  - CarbonKit
+  - ChameleonFramework
+  - CMTabbarView
+  - Google/SignIn
+  - MXParallaxHeader
+  - NVActivityIndicatorView
+  - ObjectMapper
+  - PickerView
+  - SDWebImage
+  - SGActionView
+  - SwiftyJSON
+  - VGPlayer
+  - XCDYouTubeKit
+
+SPEC CHECKSUMS:
+  Alamofire: 2d95912bf4c34f164fdfc335872e8c312acaea4a
+  AlamofireObjectMapper: 435adc82f5b367679bd9e71c4974a54efd0b2521
+  CarbonKit: f5037447bf6fcb9b41800ba8d991cd779575a9d7
+  ChameleonFramework: d21a3cc247abfe5e37609a283a8238b03575cf64
+  CMTabbarView: 2f50437600bef5001b4fc91f0196a38f96a9c289
+  FirebaseAnalytics: e5fe8486efc01bec33f6bf82e2fa9fce4b124052
+  FirebaseCore: 9691ee2ade70c098d7cf92440f4303f16d83ca75
+  FirebaseInstanceID: b9eedd6846fb5e1f0f7279e1deaa7a7e4cf8392e
+  Google: 98da4b1a60ed0beb80a290387a28333406a1eb90
+  GoogleSignIn: 8c599fc10d25b2af86a3f82fd9631e863f2b1400
+  GoogleToolboxForMac: 8e329f1b599f2512c6b10676d45736bcc2cbbeb0
+  GTMOAuth2: be83fd28d63ae3087e7d351b1f39c1a7e24ab6e7
+  GTMSessionFetcher: 5ad62e8200fa00ed011fe5e08d27fef72c5b1429
+  MXParallaxHeader: 858c403532ed933b381556a81ce333d7065ad182
+  NVActivityIndicatorView: d3738df7e2e476aca0ba6bf32a8c9fbcfc33d64b
+  ObjectMapper: 63cfe41bc6f8e7c8f44344c49901b8ae7de14c52
+  PickerView: 13713136c7db291e6ada509f0ba6de242ee0627d
+  SDWebImage: 0e435c14e402a6730315a0fb79f95e68654d55a4
+  SGActionView: 7d7f2af343936932cab8302749e5345a1732c0b7
+  SnapKit: 1ca44df72cfa543218d177cb8aab029d10d86ea7
+  SwiftyJSON: c2842d878f95482ffceec5709abc3d05680c0220
+  VGPlayer: 75ac161c0b6f489144b6633b0195a90958e7092f
+  XCDYouTubeKit: 86f4e7a9c2baa7b7adf6abfc28ac3ab34927be2d
+
+PODFILE CHECKSUM: 12964bc0730d43f49aa00f2a718dea19ac385a67
+
+COCOAPODS: 1.3.1
